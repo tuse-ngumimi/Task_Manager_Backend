@@ -5,17 +5,18 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "server": "nodemon app.js"
+    "server": "nodemon backend/server.js"
   },
   "keywords": [],
   "author": "Ngumimi Bethel Tuse",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "colors": "^1.4.0",
     "dotenv": "^17.4.0",
     "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
     "express-validator": "^7.3.2",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.4.1",
