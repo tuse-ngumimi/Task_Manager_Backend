@@ -7,7 +7,7 @@ const taskSchema = mongoose.Schema({
   },
   title: {
     type: String,
-    required: [true, 'Please ass a title'],
+    required: [true, 'Please add a title'],
   },
   description: {
     type: String,
