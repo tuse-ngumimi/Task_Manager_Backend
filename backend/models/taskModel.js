@@ -1,8 +1,26 @@
 const mongoose = require('mongoose')
 const taskSchema = mongoose.Schema({
-  text: {
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true,
+    ref: 'User',
+  },
+  title: {
     type: String,
-    required: [true, 'Please add a text value']
+    required: [true, 'Please ass a title'],
+  },
+  description: {
+    type: String,
+    required: [true, 'Please add a description'],
+  },
+  status: {
+    type: String,
+    enum: ['todo', 'in-progress', 'done'],
+    default: 'todo',
+  },
+  dueDate: {
+    type: Date,
+    required: [true, 'Please add a due date'],
   },
 },
   {
