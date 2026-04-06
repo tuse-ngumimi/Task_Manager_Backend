@@ -2,14 +2,14 @@
   "name": "task-api",
   "version": "1.0.0",
   "description": "Task Management REST API",
-  "main": "app.js",
+  "main": "backend/server.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node backend/server.js",
     "server": "nodemon backend/server.js"
   },
   "keywords": [],
   "author": "Ngumimi Bethel Tuse",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "bcryptjs": "^3.0.3",
